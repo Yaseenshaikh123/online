@@ -1,0 +1,222 @@
+/* CSS Reset */
+*{
+    margin:0px;
+    padding:0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* navigation bar */
+.navbar{
+    display:flex;
+    align-items: center;
+    position:sticky;
+}
+.navbar::before{
+    content:"";
+    position:absolute;
+    background-color: black;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    opacity:0.6;
+} 
+/* navigation search bar */
+.navbar input{
+    border-radius: 6px;
+    padding: 2px 7px;
+    position: absolute;
+    right: 91px;
+    top: 25px;
+    background-color:#0a020259;
+    border:2px solid white;
+}
+/* navigation bar: image and logo */
+.navbar img{
+    width:65px;
+    border-radius:65px;
+}
+.navbar .logo{
+    Margin:2px 8px;
+}
+/* navigation bar ul li a */
+.navbar ul {
+    display:flex;
+}
+.navbar li{
+    list-style: none;
+}
+.navbar li a{
+    color: white;
+    text-decoration:none;
+    display:block;
+    padding :8px 20px;
+    border-radius:20px;
+    font-weight: bold;
+}
+.navbar li a:hover{
+    background-color: white;
+    color:black;
+}
+
+
+/* HOME SECTION */
+.home{
+    display:flex;
+    flex-direction: column;
+    padding:6px 200px;
+    height:470px;
+    align-items: center;
+    justify-content: center;
+}
+.home::before{
+    content:"";
+    position: absolute;
+    background: url('images/background.jpg') no-repeat center center/cover;
+    top:0px;
+    left:0px;
+    height: 85%;
+    width:100%;
+    z-index:-1;
+    opacity:0.89;
+}
+.home h1{
+    color:white;
+}
+.home p{
+    color:white;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Service section */
+.services {
+    margin: 2px 0px;
+    display: flex;
+    width:50%;
+}
+.services .box{
+    border :2px solid #9d9393;
+    margin:4px 10px;
+    padding:2px 8px;
+    border-radius:25px;
+    background-color:#ebdfdf;
+}
+
+.services .box img{
+    height:42px;
+    display:block;
+    margin:auto;
+    border-radius:20px;
+}
+.content{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.service-container{
+    color:#3e3232;
+    /* text-decoration: underline; */
+}
+
+
+/* Client section */
+/* .client-container{
+    height:280px;
+} */
+.client-container::before{
+    content: "";
+    position:absolute;
+    background:url('images/contactbackground.jpeg')no-repeat center center/cover;
+    height:39%;
+    width:100%;
+    z-index:-1;
+    opacity: 0.63;
+}
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.container img{
+    width:124px;
+}
+.container #apple img{
+    width:71px;
+}
+.clients-logo{
+    padding:34px;
+}
+.client-container{
+    color:#3e3232;
+    /* text-decoration: underline; */
+}
+
+
+/* Contact section */
+.contact-container{
+    position: relative;
+}
+.contact-container::before{
+    content: "";
+    position:absolute;
+    background: url('cli.jpg')no-repeat center center/cover;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+/* contact styling */
+.contact{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+.contact input,textarea{
+    display: block;
+    width:100%;
+    padding: 0.5rem;
+    border-radius: 13px;
+    border:2px solid white;
+    background-color: #d5c7c7c7;
+}
+.contact label{
+    font-weight:bold;
+    color:black;
+    font-size: 20px;
+}
+
+
+/* footer section */
+footer{
+    background-color: black;
+    color:white;
+}
+
+
+/* Utility Classes */
+.h-primary{
+    text-align: center;
+    font-size:2.8rem;
+}
+.h-secondary{
+    text-align: center;
+    font-size:1.8rem;
+    text-decoration:underline;
+}
+.btn{
+    border:2px solid white;
+    background-color: rgb(122, 63, 63);
+    padding:6px 20px;
+    margin:17px;
+    color:whitesmoke;
+    font-size:0.9rem;
+    border-radius:10px;
+    cursor: pointer;
+}
+.center{
+    text-align:center;
+}
